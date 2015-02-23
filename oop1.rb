@@ -1,3 +1,5 @@
+require 'yaml'
+
 class Person
   require 'Date'
   attr_accessor :first_name, :surname, :dob, :fullname
