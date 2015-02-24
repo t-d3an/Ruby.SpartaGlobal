@@ -9,6 +9,7 @@ numbers = [2,1,3,4,5,one,two,three,four,five]
       numbers[x] = numbers[y] 
       numbers[y] = temp 
     else
+    end
   end 
 
   if numbers[x].class <= Integer && numbers[y].class <= Integer 
@@ -17,6 +18,7 @@ numbers = [2,1,3,4,5,one,two,three,four,five]
       numbers[x] = numbers[y] 
       numbers[y] = temp
      else
+    end
   end 
 
   end 
