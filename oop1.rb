@@ -40,7 +40,7 @@ class Person
   def print_details
     puts "#{@fullname}\n"
     puts "-" * @fullname.length
-    puts "Date of Birth: #{@dob.strftime("%d %B %Y")}\n"
+    puts "Date of Birth: #{@dob.strftime("%d %m %y")}\n"
     
     puts "Email Addresses:\n"
     @email.each do |x|
@@ -49,7 +49,7 @@ class Person
     
     puts "Phone Numbers:\n"
     @phone_number.each do |y|
-      puts "#{@phone_number}\n"
+      puts "#{y}\n"
     end
   end
 

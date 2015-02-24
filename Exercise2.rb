@@ -1,4 +1,4 @@
-numbers = [1,2,3,4,5,one,two,three,four,five] 
+numbers = [2,1,3,4,5,one,two,three,four,five] 
 
   numbers.length.times do |x| 
   numbers.length.times do |y| 
@@ -8,15 +8,15 @@ numbers = [1,2,3,4,5,one,two,three,four,five]
       temp = numbers[x] 
       numbers[x] = numbers[y] 
       numbers[y] = temp 
-    end 
+    else
   end 
 
   if numbers[x].class <= Integer && numbers[y].class <= Integer 
     if numbers[x] < numbers[y] 
       temp = numbers[x] 
       numbers[x] = numbers[y] 
-      numbers[y] = temp 
-    end 
+      numbers[y] = temp
+     else
   end 
 
   end 

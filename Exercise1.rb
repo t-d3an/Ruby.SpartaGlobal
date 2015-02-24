@@ -6,30 +6,35 @@ class PersonalInformation
     @name = nil
     @dob = nil
     @age = 0
-    @height = 0.0
+    @heigth = 0.0
     @fname = []
     @mname = []
     @sname = []
   end
     
-  def na
+  def na (na)
     puts "Please enter your name ie.(Surname Firstname)"
     @name = gets.chomp
+    na = @name
   end
 
-  def db
+  def db (db)
     puts "Please enter your date of birth ie.(dd/mm/yyyy)"
     @dob = gets.chomp.to_i
+    db = @dob
   end
 
-  def ag
+  def ag (db)
     puts "Please enter your age in number"
     @age = gets.chomp.to_i
+    db = @age
+    
   end
 
-  def he
+  def he (he)
     puts "Please enter your height in cm"
-    @height = gets.chomp.to_i
+    @heigth = gets.chomp.to_i
+    he = @heigth
   end
 
   def profile (prof)
@@ -37,21 +42,24 @@ class PersonalInformation
     prof = Hash.new
   end
         
-  def father
+  def father (fa)
     puts "Please enter your father's name"
     @fname = gets.chomp
+    fa = @fname
   end
 
-  def mother
+  def mother (mo)
     puts "Please enter your mother's name"
     @mname = gets.chomp
+    mo = @mname
   end
 
-  def sibling
+  def sibling (sib)
     puts "Do you have any siblings?"
-    if yes
+    if yes.to_s
       puts "Please enter a sibling's name"
       @sname = gets.chomp
+      sib = @sname
     else
   end
       
